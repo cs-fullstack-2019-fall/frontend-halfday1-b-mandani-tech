@@ -1,0 +1,89 @@
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 1fr;
+    width: 80%;
+    height: 500px;
+    margin: 10%;
+}
+
+
+header {
+    grid-column: 1/4;
+    grid-row: 1;
+    text-align: center;
+    /*background-color: lightblue;*/
+}
+
+#player1_section {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: pink;
+    border: 1px solid black;
+}
+
+#middle_section {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: yellow;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 42px;
+}
+
+#player2_section {
+    grid-column: 3;
+    grid-row: 2;
+    background-color: lightgrey;
+    border: 1px solid black;
+    font-size: 24px;
+}
+
+
+footer {
+    grid-column: 1/4;
+    grid-row: 3;
+    text-align: center;
+    /*background-color: lightblue;*/
+}
+
+#player_two_score{
+    font-size: 200px;
+    text-align: center;
+}
+
+#player_one_score{
+    font-size: 200px;
+    text-align: center;
+}
+
+button{
+    font-size: 48px;
+    text-align: center;
+    margin-left: 30%;
+    width: 60%;
+    border: 3px black solid;
+
+}
+
+#winnerLabel{
+    font-size: 42px;
+}
+
+
+#pink{
+    width: 70px;
+    font-size: 20px;
+}
+
+#blue
+{
+    width: 70px;
+    font-size: 20px;
+}
+#yellow
+{
+    width: 70px;
+    font-size: 20px;
+}
+

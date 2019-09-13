@@ -43,3 +43,62 @@ Toggle background colors on and off.
 
 ### Challenge3
 Make keyboard and mouse options. Disable and stop events from counting the points when the option is not chosen. 
+
+
+
+//Game plan
+
+// get references to the elements
+let score_counter1=0;
+let score_counter2=0;
+let elementButton1=document.querySelector('#button_p1');
+console.log(elementButton1);//test1
+let elementButton2=document.querySelector('#button_p2');
+console.log(elementButton2);//test1
+let elementScore1=document.querySelector('#player_one_score');
+console.log(elementScore1);
+let elementScore2=document.querySelector('#player_two_score');
+console.log(elementScore2);
+
+let elementWinnerLabel=document.querySelector('#winnerLabel');
+console.log(elementWinnerLabel.innerText);
+
+declareWinner();
+
+
+elementButton1.addEventListener('click',scoreUpPlayer1);
+
+function scoreUpPlayer1()
+{
+    score_counter1=score_counter1+1;
+   elementScore1.innerText=score_counter1;
+   console.log(elementScore1.innerText);
+   console.log(score_counter1);
+    declareWinner();
+}
+
+elementButton2.addEventListener('click',scoreUpPlayer2);
+
+function scoreUpPlayer2()
+{
+    score_counter2=score_counter2+1;
+    elementScore2.innerText=score_counter2;
+    console.log(elementScore2.innerText);
+    console.log(score_counter2);
+    declareWinner();
+}
+
+
+function declareWinner()
+{
+    if (score_counter1>score_counter2)
+    {
+        elementWinnerLabel.innerText='Player 1 is the winner';
+    }
+    else if (score_counter2>score_counter1){
+        elementWinnerLabel.innerText='Player 2 is the winner';
+    }
+    else {
+        elementWinnerLabel.innerText='Tied';
+    }
+}
