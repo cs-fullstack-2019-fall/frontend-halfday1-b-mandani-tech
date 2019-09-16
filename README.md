@@ -1,3 +1,10 @@
+### GRADED 24.5/24 : See comments below and ask for clarification as needed.
+Excellent work! Nice touch to get player names.!
+
+* Implemented colors, but there was no option to 'toggle' colors (active/deactivate colors using button or similar)
+* Your label updates depending on who is in the lead, however it always says whatever playername 'is the winner' even while game still going.
+* Update end game winner message to display winning player's name not number.
+
 # frontend-halfDay1_b
 
 ### Button Clicking Game
